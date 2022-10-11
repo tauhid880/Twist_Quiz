@@ -1,12 +1,14 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
-import Navbar2 from "../Components/NavBar2/Navbar2";
+import Footer from "../Components/Footer/Footer";
+import Navbar from "../Components/Navbar/Navbar";
 
 const Main = () => {
   return (
-    <div>
-      <Navbar2></Navbar2>
+    <div className="bg-slate-300">
+      <Navbar></Navbar>
       <Outlet></Outlet>
+      <Footer></Footer>
     </div>
   );
 };
