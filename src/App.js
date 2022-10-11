@@ -3,7 +3,7 @@ import "./App.css";
 import Blog from "./Components/Blog/Blog";
 import ErrorPage from "./Components/ErrorPage/ErrorPage";
 import Home from "./Components/Home/Home";
-import Navbar from "./Components/Navbar/Navbar";
+
 import Statistics from "./Components/Statistics/Statistics";
 import Topics from "./Components/Topics/Topics";
 import Main from "./Layouts/Main";
