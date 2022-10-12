@@ -1,4 +1,3 @@
-import { data } from "autoprefixer";
 import React from "react";
 import { useLoaderData } from "react-router-dom";
 import Header from "../Header/Header";
@@ -6,7 +5,7 @@ import TopicCard from "../TopicCard/TopicCard";
 
 const Home = () => {
   const topics = useLoaderData();
-  console.log(topics);
+  console.log(topics.data);
   return (
     <div>
       <Header></Header>

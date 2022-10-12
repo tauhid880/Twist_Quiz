@@ -1,9 +1,10 @@
 import React from "react";
 import { faPlay } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { Link } from "react-router-dom";
 
 const TopicCard = ({ topic }) => {
-  const { logo, name, total } = topic;
+  const { logo, name, total, id } = topic;
 
   return (
     <div className="mb-10">
@@ -17,9 +18,11 @@ const TopicCard = ({ topic }) => {
             Total Question : {total}
           </p>
           <div className="card-actions justify-center">
-            <button className="btn">
-              Start Quiz <FontAwesomeIcon className="ml-2" icon={faPlay} />
-            </button>
+            <Link to={`/topics/${id}`}>
+              <button className="btn">
+                Start Quiz <FontAwesomeIcon className="ml-2" icon={faPlay} />
+              </button>
+            </Link>
           </div>
         </div>
       </div>
