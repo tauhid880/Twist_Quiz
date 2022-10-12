@@ -6,6 +6,7 @@ import TopicCard from "../TopicCard/TopicCard";
 
 const Home = () => {
   const topics = useLoaderData();
+  console.log(topics);
   return (
     <div>
       <Header></Header>

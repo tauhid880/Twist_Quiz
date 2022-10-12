@@ -3,7 +3,7 @@ import { faPlay } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const TopicCard = ({ topic }) => {
-  const { logo, name } = topic;
+  const { logo, name, total } = topic;
 
   return (
     <div className="mb-10">
@@ -13,6 +13,9 @@ const TopicCard = ({ topic }) => {
         </figure>
         <div className="card-body p-3">
           <h2 className="card-title font-mono font-bold">{name}</h2>
+          <p className="text-start py-5 font-mono font-semibold">
+            Total Question : {total}
+          </p>
           <div className="card-actions justify-center">
             <button className="btn">
               Start Quiz <FontAwesomeIcon className="ml-2" icon={faPlay} />
