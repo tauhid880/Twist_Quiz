@@ -19,4 +19,3 @@ const Home = () => {
 };
 
 export default Home;
-<h1>This is Home Page</h1>;
